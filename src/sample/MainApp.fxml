@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="primary-color" stylesheets="@../style/LightMode.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainAppController">
+   <children>
+      <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="390.0">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="play" layoutX="360.0" layoutY="321.0" mnemonicParsing="false" onAction="#Play" prefHeight="60.0" prefWidth="180.0" stylesheets="@../style/LightMode.css" text="Play">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="round-button" />
+         </styleClass>
+      </Button>
+      <Button fx:id="mode" layoutX="13.0" layoutY="530.0" mnemonicParsing="false" onAction="#LightDarkMode" prefHeight="40.0" prefWidth="64.0">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="128.0" onDragDetected="#LightDarkMode" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/mode.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bestscore" layoutX="360.0" layoutY="440.0" mnemonicParsing="false" onAction="#BescScore" prefHeight="60.0" prefWidth="180.0" stylesheets="@../style/LightMode.css" text="Best score">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="round-button" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>
